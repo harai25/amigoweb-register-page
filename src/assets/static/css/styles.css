@@ -1,0 +1,39 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  background: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+.auth__header {
+  margin-top: 40px;
+  margin-bottom: 58px;
+}
+
+.info__title {
+  font-weight: 'bold';
+}
+
+.info .info__title {
+  margin-bottom: 8px;
+}
+
+.info__description {
+  font-weight: 'normal';
+}
+

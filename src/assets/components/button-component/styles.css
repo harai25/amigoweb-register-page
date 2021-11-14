@@ -1,0 +1,26 @@
+.button {
+  cursor: pointer;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+  border-radius: 6px;
+}
+
+.button__text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #EBF4F8;
+}
+
+.button_active {
+  background-color: #0880AE;
+  transition: .2s;
+}
+
+.button_disabled {
+  background-color: #DBE2EA;
+  transition: .2s;
+}

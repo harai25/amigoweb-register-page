@@ -1,0 +1,23 @@
+.field {
+  margin-bottom: 34px;
+}
+
+.field__label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #756F86;
+
+  margin-bottom: 7px;
+}
+
+.field__error {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FF7171;
+
+  position: absolute;
+
+  margin-top: 8px;
+}
