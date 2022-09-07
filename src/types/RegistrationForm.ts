@@ -1,4 +1,4 @@
-export enum language {
+export enum Language {
   EMPTY = '',
   RUSSIAN = 'Русский',
   ENGLISH = 'Английский',
@@ -10,6 +10,6 @@ export interface RegistrationForm {
   name: string;
   email: string;
   phone: string;
-  language: language;
+  language: Language;
   isTermOfUse: boolean;
 }

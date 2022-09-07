@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('IBM Plex Sans'),
-    url('~@/assets/static/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf') format("truetype");
+    url('~@/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf') format("truetype");
 }
 
 @font-face {
@@ -11,5 +11,5 @@
   font-style: normal;
   font-weight: bold;
   src: local('IBM Plex Sans'),
-    url('~@/assets/static/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf') format("truetype");
+    url('~@/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf') format("truetype");
 }
