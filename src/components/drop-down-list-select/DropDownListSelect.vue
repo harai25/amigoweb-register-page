@@ -35,7 +35,10 @@ export default defineComponent({
   props: {
     modelValue: String,
     placeholder: String,
-    items: Array as PropType<string[]>
+    items: {
+      type: Array as PropType<string[]>,
+      required: true,
+    },
   },
   emits: ['update:modelValue'],
   setup (_, { emit }) {
@@ -79,4 +82,4 @@ export default defineComponent({
 })
 </script>
 
-<style scoped src="@/assets/components/drop-down-list-select/styles.css"></style>
+<style scoped src="./DropDownListSelect.css"></style>

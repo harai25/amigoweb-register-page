@@ -27,4 +27,4 @@ export default defineComponent({
 })
 </script>
 
-<style scoped src="@/assets/components/field-component/styles.css"></style>
+<style scoped src="./FieldComponent.css"></style>

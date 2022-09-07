@@ -19,7 +19,10 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'TextField',
   props: {
-    modelValue: String,
+    modelValue: {
+      type: String,
+      required: true,
+    },
     placeholder: String,
     maxLength: Number,
     filterInput: RegExp,
@@ -27,7 +30,7 @@ export default defineComponent({
   emits: ['update:modelValue', 'action'],
   setup (props, { emit }) {
 
-    const inputHandler = (event: any) => {
+    const inputHandler = (event: {target: HTMLInputElement}) => {
       emit('action')
       if (event.target.value === '') {
         emit('update:modelValue', '')
@@ -46,4 +49,4 @@ export default defineComponent({
 })
 </script>
 
-<style scoped src="@/assets/components/text-field/styles.css"></style>
+<style scoped src="./TextField.css"></style>

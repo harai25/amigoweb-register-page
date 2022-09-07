@@ -71,7 +71,7 @@
 <script lang="ts">
 import { computed, defineComponent, reactive } from 'vue'
 import { generateForm } from './utils/form'
-import { RegistrationForm, language } from './types/RegistrationForm'
+import { RegistrationForm, Language } from './types/RegistrationForm'
 import ButtonComponent from './components/button-component/ButtonComponent.vue'
 import FieldComponent from './components/field-component/FieldComponent.vue'
 import TextField from './components/text-field/TextField.vue'
@@ -93,17 +93,17 @@ export default defineComponent({
       name: '',
       email: '',
       phone: '',
-      language: language.EMPTY,
+      language: Language.EMPTY,
       isTermOfUse: false,
     }
 
     const form = reactive(generateForm(registrationInitial))
 
-    const languageList: language[] = [
-      language.RUSSIAN,
-      language.ENGLISH,
-      language.CHINNESE,
-      language.SPANISH
+    const languageList: Language[] = [
+      Language.RUSSIAN,
+      Language.ENGLISH,
+      Language.CHINNESE,
+      Language.SPANISH
     ]
 
     const canBeEdit = computed(() => !!(
@@ -144,6 +144,6 @@ export default defineComponent({
 })
 </script>
 
-<style src="@/assets/static/css/styles.css"></style>
-<style src="@/assets/static/css/fonts.css"></style>
-<style src="@/assets/static/fontawesome/css/all.css"></style>
+<style src="@/assets/css/styles.css"></style>
+<style src="@/assets/css/fonts.css"></style>
+<style src="@/assets/fontawesome/css/all.css"></style>

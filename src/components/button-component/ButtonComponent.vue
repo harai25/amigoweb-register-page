@@ -17,4 +17,4 @@ export default defineComponent({
 })
 </script>
 
-<style scoped src="@/assets/components/button-component/styles.css"></style>
+<style scoped src="./ButtonComponent.css"></style>

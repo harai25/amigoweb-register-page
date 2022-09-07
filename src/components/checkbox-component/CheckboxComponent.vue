@@ -26,7 +26,7 @@ export default defineComponent({
   },
   emits: ['update:modelValue'],
   setup (_, {emit}) {
-    const checked = (event: any) => {
+    const checked = (event: {target: HTMLInputElement}) => {
       emit('update:modelValue', event.target.checked)
     }
 
@@ -37,4 +37,4 @@ export default defineComponent({
 })
 </script>
 
-<style scoped src="@/assets/components/checkbox-component/styles.css"></style>
+<style scoped src="./CheckboxComponent.css"></style>
